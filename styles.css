@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: SF pro display;
+}
+
+@font-face{
+    font-family: SF pro display;
+    src: url(font/FontsFree-Net-SFProDisplay-Regular.ttf);
+}
+
+body{
+    overflow: hidden;
+}
+
+.walkthroughs{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.walkthroughs .formbox{
+    width: 30%;
+    height: 95%;
+    position: relative;
+    text-align: center;
+    background: #e5e5e5;
+    padding: 8rem 3rem 2rem;
+}
+
+.walkthroughs .formbox a img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.walkthroughs .formbox h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #3e476a;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.walkthroughs .formbox p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #878fad;
+    line-height: 2rem;
+    margin: 1.5rem 0 3rem;
+}
+
+.walkthroughs .formbox .signup{
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, #59a1ff 19.89%, #3d67d2 100%);
+    padding: .8rem;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 2s;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.walkthroughs .formbox .signup:hover{
+    background: linear-gradient(90deg, #3d67d2 19.89%, #59a1ff 100%);
+}
+
+.walkthroughs .formbox .log-in{
+    display: block;
+    width: 100%;
+    background: transparent;
+    padding: .8rem;
+    border: 1.5px solid #59a1ff;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #59a1ff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.walkthroughs .formbox .log-in:hover{
+    background: #59a1ff;
+    color: #ffffff;
+}
+
+.walkthroughs .formbox .skip{
+    text-decoration: none;
+    color: #3d8bf2;
+    margin-top: 2.5rem;
+    display: block;
+}
+
+/** Sign up **/
+
+.sign-up{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sign-up .signupbox{
+    width: 30%;
+    height: 95%;
+    position: relative;
+    text-align: center;
+    background: #e5e5e5;
+    padding: 3rem 3rem 2rem;
+}
+
+.sign-up .signupbox a img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.sign-up .signupbox form{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.sign-up .signupbox form input[type="text"]{
+    width: 100%;
+    padding: .7rem;
+    background: #f2f5fa;
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    color: #a6acc3;
+    caret-color: #bdc6d4;
+}
+
+.sign-up .signupbox form input[type="text"]::placeholder{
+    color: #a6acc3;
+}
+
+.sign-up .signupbox form .submit{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem;
+    position: relative;
+    background: #f2f5fa;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.sign-up .signupbox form .submit input[type="password"]{
+    width: 90%;
+    background: transparent;
+    border: none;    
+    border-radius: 3px;
+    color: #a6acc3;
+    caret-color: #bdc6d4;
+}
+
+.sign-up .signupbox form input[type="password"]::placeholder{
+    color: #a6acc3;
+}
+
+.sign-up .signupbox form input[type="submit"]{
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    padding: .7rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #59a1ff 19.89%, #3d67d2 100%);
+    transition: .5s;
+}
+
+.sign-up .signupbox form input[type="submit"]:hover{
+    background: linear-gradient(90deg,  #3d67d2 19.89%, #59a1ff 100%);
+}
+
+.sign-up .signupbox hr{
+    width: 100%;
+    margin: 2rem 0 1rem;
+    border: 1px solid #a6acc3;
+}
+
+.sign-up .signupbox span{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background: #e5e5e5;
+    margin: -1.7rem auto 1rem;
+    color: #525664;
+    padding: 0 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up .signupbox .fb{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4a6ea8;
+    border: 1px solid #395185;
+    border-radius: 3px;
+    padding: .5rem;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: .7rem;
+    transition: .5s;
+}
+
+.sign-up .signupbox .fb:hover{
+    background: #2b58a0;
+}
+
+.sign-up .signupbox .fb .fblogo{
+    width: 10%;
+    height: 100%;
+    background: #395185;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.sign-up .signupbox .fb .fblogo:hover{
+    background: #577ac4;
+}
+
+.sign-up .signupbox .fb .fblogo img{
+    width: .6rem;
+}
+
+.sign-up .signupbox .fb .signup a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sign-up .signupbox .google{
+    width: 100%;
+    padding: .4rem;
+    border: 1px solid #bdc6d4;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.sign-up .signupbox .google .logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-right: 1px solid #bdc6d4;
+    display: flex;
+    align-items: center;
+    padding: .4rem;
+}
+
+.sign-up .signupbox .google a{
+    text-decoration: none;
+    color: #878fad;
+    font-weight: 1rem;
+    font-weight: 400;
+}
+
+.sign-up .signupbox .terms{
+    font-size: .8rem;
+    color: #878fad;
+    margin-bottom: 1rem;
+}
+
+.sign-up .signupbox .terms a{
+    font-size: .8rem;
+    color: #3d8bf2;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.sign-up .signupbox .terms a:hover{
+    color: #245aa1;
+}
+
+.sign-up .signupbox p{
+    font-size: 1rem;
+    color: #878fad;
+}
+
+.sign-up .signupbox p a{
+    font-size: 1rem;
+    color: #3d8bf2;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.sign-up .signupbox p a:hover{
+    color: #245aa1;
+}
+
+/** Log In **/
+
+.login{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.login .loginbox{
+    width: 30%;
+    height: 95%;
+    position: relative;
+    text-align: center;
+    background: #e5e5e5;
+    padding: 4rem 3rem 2rem;
+}
+
+.login .loginbox a img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.login .loginbox form{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.login .loginbox form input[type="text"]{
+    width: 100%;
+    padding: .7rem;
+    background: #f2f5fa;
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    color: #a6acc3;
+    caret-color: #bdc6d4;
+}
+
+.login .loginbox form input[type="text"]::placeholder{
+    color: #a6acc3;
+}
+
+.login .loginbox form .submit{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem;
+    position: relative;
+    background: #f2f5fa;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.login .loginbox form .submit input[type="password"]{
+    width: 90%;
+    background: transparent;
+    border: none;    
+    border-radius: 3px;
+    color: #a6acc3;
+    caret-color: #bdc6d4;
+}
+
+.login .loginbox form input[type="password"]::placeholder{
+    color: #a6acc3;
+}
+
+.login .loginbox form input[type="submit"]{
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    padding: .7rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #59a1ff 19.89%, #3d67d2 100%);
+    transition: .5s;
+    margin-bottom: 1rem;
+}
+
+.login .loginbox form input[type="submit"]:hover{
+    background: linear-gradient(90deg,  #3d67d2 19.89%, #59a1ff 100%);
+}
+
+.login .loginbox a{
+    text-decoration: none;
+    color: #3d8bf2;
+    display: block;
+}
+
+.login .loginbox hr{
+    width: 100%;
+    margin: 2rem 0 1.5rem;
+    border: 1px solid #a6acc3;
+}
+
+.login .loginbox span{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background: #e5e5e5;
+    margin: -2.1rem auto 1rem;
+    color: #525664;
+    padding: 0 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .loginbox .fb{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4a6ea8;
+    border: 1px solid #395185;
+    border-radius: 3px;
+    padding: .5rem;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: .7rem;
+    transition: .5s;
+}
+
+.login .loginbox .fb:hover{
+    background: #2b58a0;
+}
+
+.login .loginbox .fb .fblogo{
+    width: 10%;
+    height: 100%;
+    background: #395185;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.login .loginbox .fb .fblogo:hover{
+    background: #577ac4;
+}
+
+.login .loginbox .fb .fblogo img{
+    width: .6rem;
+}
+
+.login .loginbox .signup a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.login .loginbox .google{
+    width: 100%;
+    padding: .4rem;
+    border: 1px solid #bdc6d4;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.login .loginbox .google .logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-right: 1px solid #bdc6d4;
+    display: flex;
+    align-items: center;
+    padding: .4rem;
+}
+
+.login .loginbox .google a{
+    text-decoration: none;
+    color: #878fad;
+    font-weight: 1rem;
+    font-weight: 400;
+}
+
+.login .loginbox p{
+    font-size: .9rem;
+    color: #878fad;
+}
+
+.login .loginbox p a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-size: .9rem;
+}
+
+/** Mobile design **/
+
+@media (max-width: 991px){
+    html, body {
+        overflow-x: hidden!important;
+    }
+
+    .walkthroughs {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .walkthroughs .formbox{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        text-align: center;
+        background: #ffffff;
+        padding: 10rem 2rem 2rem;
+    }
+
+    .walkthroughs .formbox a img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .walkthroughs .formbox h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .walkthroughs .formbox p {
+        font-size: 1.5rem;
+        margin: 1rem 0 7rem;
+    }
+
+    .walkthroughs .formbox .signup {
+        padding: .5rem;
+        margin-bottom: .7rem;
+    }
+
+    .walkthroughs .formbox .log-in {
+        padding: .5rem;
+    }
+
+    .walkthroughs .formbox .skip {
+        margin-top: 2rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .sign-up {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .sign-up .signupbox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        background: #ffffff;
+        padding: 3rem 3rem 2rem;
+    }
+
+    .sign-up .signupbox span {
+        background: #ffffff;
+    }
+
+    .sign-up .signupbox .google .logo {
+        padding: .25rem;
+    }
+
+    .sign-up .signupbox .terms {
+        margin-bottom: 3.5rem;
+        line-height: 1.3rem;
+    }
+
+    .login {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .login .loginbox {
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        padding: 5rem 3rem 2rem;
+    }
+
+    .login .loginbox span {
+        background: #ffffff;
+    }
+
+    .login .loginbox .google .logo {
+        padding: .25rem;
+    }
+
+    .login .loginbox p {
+        margin-top: 4rem;
+    }
+}
